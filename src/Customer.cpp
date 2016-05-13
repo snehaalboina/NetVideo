@@ -24,7 +24,7 @@ std::string Customer::getNames() const {
 }
 
 // add a rental to this customer
-void Customer::addRental(const Rental& rental) {
+void Customer::addRent(const Rental& rental) {
 
     rentals.push_back(rental);
 }
@@ -99,3 +99,6 @@ std::string Customer::statement() const {
 
     return result;
 }
+:wq
+
+
