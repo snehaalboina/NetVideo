@@ -24,7 +24,7 @@ int Video::getCode() const {
 }
 
 // set movie price code
-void Video::setPriceCode(int new_price_code) {
+void Video::setPriceCode(int new_price_cd) {
 
-    price_cd = new_price_code;
+    price_cd = new_price_cd;
 }
