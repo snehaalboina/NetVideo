@@ -18,7 +18,7 @@ Customer::Customer(const std::string& name)
 { }
 
 // customer name
-std::string Customer::getName() const {
+std::string Customer::getNames() const {
 
     return name;
 }
@@ -34,11 +34,10 @@ std::string Customer::statement() const {
 
     // customer name
     std::string result("Rental Record for ");
-    result += getName();
+    result += getNames();
     result += "\n";
 
-    // rentals
-    double totalAmount = 0;
+    // rentals  double totalAmount = 0;
     int frequentRenterPoints = 0;
     for (std::vector<Rental>::const_iterator it = rentals.begin(); it != rentals.end(); ++it) {
 
